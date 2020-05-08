@@ -18,15 +18,13 @@ from tg_bot.modules.helper_funcs.chat_status import is_user_admin
 from tg_bot.modules.helper_funcs.misc import paginate_modules
 
 PM_START_TEXT = """
-Hey! {}, my name is {}. I'm here to help you manage your groups!
-Click Help button to find out more about how to use me, so you can get helped!
+Hey! {}, Me llamo {}. ¡Estoy aquí para ayudarte a administrar tus grupos!
+¡Haga clic en el botón Ayuda para obtener más información sobre cómo usarme, para que pueda recibir ayuda!
+Para más comandos haga clic /help..
 
-For more commands click /help...
+¿Quieres agregarme a tu grupo? [¡Haga clic aquí!](http://t.me/arlessbot?startgroup=true)
 
-Want to add me to your group? [Click here!](http://t.me/arlessbot?startgroup=true)
-
-I'm a group manager bot maintained by  [this person](tg://user?id={}).
-
+Soy un bot para administrar supergrupos, mantenido por [esta persona](tg://user?Id={}).
 """
 
 HELP_STRINGS = """
