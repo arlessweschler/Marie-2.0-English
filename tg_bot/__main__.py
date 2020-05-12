@@ -23,7 +23,7 @@ Hey! {}, Me llamo {}. ¡Estoy aquí para ayudarte a administrar tus grupos!
 Para más comandos haga clic /help..
 
 ¿Quieres agregarme a tu grupo? [¡Haga clic aquí!](http://t.me/arlessbot?startgroup=true)
-[[InlineKeyboardButton(text="¿Quieres añadirme a grupo",url="http://t.me/arlessbot?startgroup=true))]]))
+InlineKeyboardMarkup[[InlineKeyboardButton(text="¿Quieres añadirme a grupo",url="http://t.me/arlessbot?startgroup=true))]]))
 Soy un bot para administrar supergrupos, mantenido por [esta persona](tg://user?Id={}).
 """
 
