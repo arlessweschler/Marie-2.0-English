@@ -21,6 +21,15 @@ PM_START_TEXT = """
 Hey! {} Soy {}! ¡Estoy aquí para ayudarte a administrar tus grupos
 Para más comandos haga clic en /help..
 
+keyboard = InlineKeyboardMarkup(
+            InlineKeyboardButton(
+              text = "msg", 
+              url = 'google.com')
+              )
+    
+bot.sendMessage(chat_id,
+              text = 'hello',
+             reply_markup = keyboard)
 Estoy mantenido  [por esta persona](tg://user?id={}).
 
 """
