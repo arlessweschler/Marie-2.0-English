@@ -23,15 +23,6 @@ Hey! {} Soy {}! ¡Estoy aquí para ayudarte a administrar tus grupos!
 Para más comandos haga clic en /help..
 
 Estoy mantenido  [por esta persona](tg://user?id={}).
-text = "`Hey there! I'll help manage your groups--a Group managing Bot!`\n\
-`Click ❗️Help button to find out more about how to use me to my full potential.`\n\n"
-
-    text +="`I'am fully open source. You can find my code here` [kyne3301](https://t.me/kyne3301) "
-
-    keyboard = [[InlineKeyboardButton(text="📢 Support Group", url="https://t.me/kyne3301")]]
-    keyboard += [[InlineKeyboardButton(text="🛠 Control panel", callback_data="cntrl_panel_M")]]
-    keyboard += [[InlineKeyboardButton(text="🇺🇸 Language", callback_data="set_lang_"), 
-        InlineKeyboardButton(text="❔ Help", callback_data="help_back")]]
 
 """
 
