@@ -134,9 +134,12 @@ def start(bot: Bot, update: Update, args: List[str]):
 
         else:
             first_name = update.effective_user.first_name
-            update.effective_message.reply_text(
-                PM_START_TEXT.format(escape_markdown(first_name), escape_markdown(bot.first_name), OWNER_ID),
-                parse_mode=ParseMode.MARKDOWN)
+            buttons = InlineKeyboardMarkup(
+                [[InlineKeyboardButton(text="🎉 Add me to your group", url="https://t.me/{}?startgroup=new".format(context.bot.username))],
+                [InlineKeyboardButton(text="⚙️ Connect Group", callback_data="main_connect")],
+                [InlineKeyboardButton(text="🔔 Update Channel", url="https://t.me/metabutlernews")],
+                [InlineKeyboardButton(text="Help❓", callback_data="help_back")]])
+            update.effective_message.reply_text(PM_START_TEXT.format(escape_markdown(first_name), escape_markdown(context.bot.first_name)), reply_markup=buttons, parse_mode=ParseMode.MARKDOWN, disable_web_page_preview=True)
     else:
         update.effective_message.reply_text("waked up😏😏😏")
 
