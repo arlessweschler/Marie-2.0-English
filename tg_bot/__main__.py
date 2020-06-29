@@ -135,6 +135,7 @@ def send_start(bot, update):
         pass
 
     #chat = update.effective_chat  # type: Optional[Chat] and unused variable
+PM_START_TEXT = """
     text = "`Hey there! I'll help manage your groups--a Group managing Bot!`\n\
 `Click ❗️Help button to find out more about how to use me to my full potential.`\n\n"
 
@@ -147,7 +148,7 @@ def send_start(bot, update):
 
     update.effective_message.reply_text(text, reply_markup=InlineKeyboardMarkup(keyboard), parse_mode=ParseMode.MARKDOWN, disable_web_page_preview=True)
 
-
+"""
 
 def control_panel(bot, update):
     chat = update.effective_chat
