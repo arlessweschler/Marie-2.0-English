@@ -18,18 +18,9 @@ from tg_bot.modules.helper_funcs.chat_status import is_user_admin
 from tg_bot.modules.helper_funcs.misc import paginate_modules
 
 PM_START_TEXT = """
-Hey! {} Soy {}! ¡Estoy aquí para ayudarte a administrar tus grupos
+Hey! *{}* Soy {}! ¡Estoy aquí para ayudarte a administrar tus grupos
 Para más comandos haga clic en /help..
 
-keyboard = InlineKeyboardMarkup(
-            InlineKeyboardButton(
-              text = "msg", 
-              url = 'google.com')
-              )
-    
-bot.sendMessage(chat_id,
-              text = 'hello',
-             reply_markup = keyboard)
 Estoy mantenido  [por esta persona](tg://user?id={}).
 
 """
