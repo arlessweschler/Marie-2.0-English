@@ -133,13 +133,12 @@ def start(bot: Bot, update: Update, args: List[str]):
                 IMPORTED["rules"].send_rules(update, args[0], from_pm=True)
 
         else:
-            first_name = update.effective_user.first_name
-            buttons = InlineKeyboardMarkup(
-                [[InlineKeyboardButton(text="🎉 Add me to your group", url="https://t.me/{}?startgroup=new".format(context.bot.username))],
-                [InlineKeyboardButton(text="⚙️ Connect Group", callback_data="main_connect")],
-                [InlineKeyboardButton(text="🔔 Update Channel", url="https://t.me/metabutlernews")],
-                [InlineKeyboardButton(text="Help❓", callback_data="help_back")]])
-            update.effective_message.reply_text(PM_START_TEXT.format(escape_markdown(first_name), escape_markdown(context.bot.first_name)), reply_markup=buttons, parse_mode=ParseMode.MARKDOWN, disable_web_page_preview=True)
+            keyboard = [[InlineKeyboardButton(text="📢 Support Group", url="https://t.me/kyne3301")]]
+    keyboard += [[InlineKeyboardButton(text="🛠 Control panel", callback_data="cntrl_panel_M")]]
+    keyboard += [[InlineKeyboardButton(text="🇺🇸 Language", callback_data="set_lang_"), 
+        InlineKeyboardButton(text="❔ Help", callback_data="help_back")]]
+
+    update.effective_message.reply_text(text, reply_markup=InlineKeyboardMarkup(keyboard), parse_mode=ParseMode.MARKDOWN, disable_web_page_preview=True)
     else:
         update.effective_message.reply_text("waked up😏😏😏")
 
